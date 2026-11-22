@@ -164,15 +164,3 @@ Each results directory holds `instances.json` (the instances with their optimal 
 ## License
 
 Code and saved results are released under the MIT License (see `LICENSE`).
-
-## Citation
-
-```
-@article{fernandes2026htmoa,
-  author = {Fernandes, Gutelvam Rodrigues},
-  title  = {Selection, Not Synthesis: Why Hierarchical Aggregation Keeps Scaling
-            Mixture-of-Agents Where Flat Aggregation Saturates},
-  year   = {2026},
-  note   = {https://github.com/Gutelvam/htmoa-paper}
-}
-```
