@@ -1,0 +1,15 @@
+# credentials: never commit
+.env
+
+# manuscript sources and drafts are kept outside this repository
+paper/
+*.pdf
+
+# uncompressed traces (the repository ships traces.jsonl.gz) and logs
+results/**/traces.jsonl
+*.log
+
+# generated locally
+analysis/
+__pycache__/
+.pytest_cache/

@@ -1,0 +1,6 @@
+anthropic>=0.50
+numpy
+scipy>=1.9
+pandas
+matplotlib
+pytest

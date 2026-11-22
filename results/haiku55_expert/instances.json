@@ -1,0 +1,4176 @@
+[
+ {
+  "id": "expert-000",
+  "seed": 0,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 80,
+  "overhead": 15,
+  "senior_cap": 4,
+  "junior_cap": 4,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 7,
+    "revenue": 270,
+    "deadline": 4,
+    "late_penalty": 80,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 6,
+    "revenue": 150,
+    "deadline": 4,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 5,
+    "revenue": 200,
+    "deadline": 5,
+    "late_penalty": 20,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 9,
+    "revenue": 200,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 12,
+    "revenue": 350,
+    "deadline": 2,
+    "late_penalty": 55,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 4,
+    "revenue": 110,
+    "deadline": 4,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 6,
+    "revenue": 140,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": [
+     "P6"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 9,
+    "revenue": 330,
+    "deadline": 2,
+    "late_penalty": 95,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 12,
+    "revenue": 285,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P10",
+    "work": 7,
+    "revenue": 290,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 75,
+    "senior_loss": 2,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 5,
+    "damage": 70,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 50,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 80,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 661
+ },
+ {
+  "id": "expert-001",
+  "seed": 1,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 105,
+  "overhead": 15,
+  "senior_cap": 5,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 11,
+    "revenue": 285,
+    "deadline": 4,
+    "late_penalty": 80,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 11,
+    "revenue": 415,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 10,
+    "revenue": 300,
+    "deadline": 5,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 8,
+    "revenue": 295,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 4,
+    "revenue": 110,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 12,
+    "revenue": 470,
+    "deadline": 5,
+    "late_penalty": 90,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 8,
+    "revenue": 260,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": [
+     "P6"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 11,
+    "revenue": 400,
+    "deadline": 4,
+    "late_penalty": 85,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 4,
+    "revenue": 155,
+    "deadline": 1,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 5,
+    "revenue": 185,
+    "deadline": 5,
+    "late_penalty": 55,
+    "deps": [
+     "P4"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 2,
+    "damage": 70,
+    "senior_loss": 0,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 85,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 3,
+    "damage": 60,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 60,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 869
+ },
+ {
+  "id": "expert-002",
+  "seed": 2,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 90,
+  "overhead": 20,
+  "senior_cap": 4,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 9,
+    "revenue": 225,
+    "deadline": 4,
+    "late_penalty": 50,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 9,
+    "revenue": 305,
+    "deadline": 1,
+    "late_penalty": 70,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 8,
+    "revenue": 330,
+    "deadline": 1,
+    "late_penalty": 95,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 7,
+    "revenue": 235,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 7,
+    "revenue": 190,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 12,
+    "revenue": 295,
+    "deadline": 2,
+    "late_penalty": 60,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 12,
+    "revenue": 450,
+    "deadline": 5,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 10,
+    "revenue": 330,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 5,
+    "revenue": 200,
+    "deadline": 5,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 4,
+    "revenue": 150,
+    "deadline": 3,
+    "late_penalty": 30,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 2,
+    "damage": 70,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 5,
+    "damage": 55,
+    "senior_loss": 0,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 3,
+    "damage": 45,
+    "senior_loss": 2,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 5,
+    "damage": 90,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 750
+ },
+ {
+  "id": "expert-003",
+  "seed": 3,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 80,
+  "overhead": 25,
+  "senior_cap": 3,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 6,
+    "revenue": 225,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 8,
+    "revenue": 270,
+    "deadline": 5,
+    "late_penalty": 60,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 12,
+    "revenue": 485,
+    "deadline": 5,
+    "late_penalty": 70,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 4,
+    "revenue": 155,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 10,
+    "revenue": 230,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 6,
+    "revenue": 135,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 11,
+    "revenue": 395,
+    "deadline": 5,
+    "late_penalty": 90,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 9,
+    "revenue": 250,
+    "deadline": 1,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 9,
+    "revenue": 330,
+    "deadline": 3,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 8,
+    "revenue": 315,
+    "deadline": 4,
+    "late_penalty": 85,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 4,
+    "damage": 80,
+    "senior_loss": 0,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 55,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 3,
+    "damage": 90,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 5,
+    "damage": 85,
+    "senior_loss": 0,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 296
+ },
+ {
+  "id": "expert-004",
+  "seed": 4,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 105,
+  "overhead": 20,
+  "senior_cap": 5,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 8,
+    "revenue": 195,
+    "deadline": 1,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 5,
+    "revenue": 170,
+    "deadline": 4,
+    "late_penalty": 25,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 11,
+    "revenue": 270,
+    "deadline": 5,
+    "late_penalty": 65,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 12,
+    "revenue": 335,
+    "deadline": 2,
+    "late_penalty": 70,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 6,
+    "revenue": 135,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 6,
+    "revenue": 175,
+    "deadline": 5,
+    "late_penalty": 35,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 4,
+    "revenue": 160,
+    "deadline": 1,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 4,
+    "revenue": 140,
+    "deadline": 3,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 6,
+    "revenue": 150,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 6,
+    "revenue": 135,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": [
+     "P8"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 5,
+    "damage": 40,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 2,
+    "damage": 90,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 85,
+    "senior_loss": 1,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 2,
+    "damage": 80,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 182
+ },
+ {
+  "id": "expert-005",
+  "seed": 5,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 70,
+  "overhead": 15,
+  "senior_cap": 3,
+  "junior_cap": 4,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 12,
+    "revenue": 385,
+    "deadline": 1,
+    "late_penalty": 75,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 11,
+    "revenue": 310,
+    "deadline": 2,
+    "late_penalty": 50,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 4,
+    "revenue": 160,
+    "deadline": 2,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 8,
+    "revenue": 295,
+    "deadline": 5,
+    "late_penalty": 60,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 5,
+    "revenue": 190,
+    "deadline": 1,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 11,
+    "revenue": 425,
+    "deadline": 4,
+    "late_penalty": 70,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 4,
+    "revenue": 165,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 6,
+    "revenue": 160,
+    "deadline": 3,
+    "late_penalty": 25,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 8,
+    "revenue": 295,
+    "deadline": 5,
+    "late_penalty": 55,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P10",
+    "work": 10,
+    "revenue": 360,
+    "deadline": 4,
+    "late_penalty": 75,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 4,
+    "damage": 65,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 5,
+    "damage": 60,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 3,
+    "damage": 65,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 45,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 572
+ },
+ {
+  "id": "expert-006",
+  "seed": 6,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 95,
+  "overhead": 25,
+  "senior_cap": 5,
+  "junior_cap": 3,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 11,
+    "revenue": 375,
+    "deadline": 3,
+    "late_penalty": 85,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 8,
+    "revenue": 300,
+    "deadline": 3,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 12,
+    "revenue": 385,
+    "deadline": 2,
+    "late_penalty": 90,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 9,
+    "revenue": 200,
+    "deadline": 4,
+    "late_penalty": 60,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 7,
+    "revenue": 195,
+    "deadline": 2,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 5,
+    "revenue": 120,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 4,
+    "revenue": 135,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 10,
+    "revenue": 400,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 12,
+    "revenue": 450,
+    "deadline": 4,
+    "late_penalty": 105,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P10",
+    "work": 6,
+    "revenue": 200,
+    "deadline": 3,
+    "late_penalty": 55,
+    "deps": [
+     "P3"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 5,
+    "damage": 40,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 4,
+    "damage": 55,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 4,
+    "damage": 65,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 5,
+    "damage": 50,
+    "senior_loss": 0,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 818
+ },
+ {
+  "id": "expert-007",
+  "seed": 7,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 100,
+  "overhead": 20,
+  "senior_cap": 5,
+  "junior_cap": 4,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 4,
+    "revenue": 130,
+    "deadline": 1,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 9,
+    "revenue": 355,
+    "deadline": 4,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 6,
+    "revenue": 190,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 5,
+    "revenue": 210,
+    "deadline": 2,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 12,
+    "revenue": 495,
+    "deadline": 4,
+    "late_penalty": 120,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 6,
+    "revenue": 240,
+    "deadline": 5,
+    "late_penalty": 70,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 10,
+    "revenue": 320,
+    "deadline": 5,
+    "late_penalty": 85,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 12,
+    "revenue": 450,
+    "deadline": 4,
+    "late_penalty": 115,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 8,
+    "revenue": 295,
+    "deadline": 1,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 4,
+    "revenue": 95,
+    "deadline": 3,
+    "late_penalty": 15,
+    "deps": [
+     "P1"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 70,
+    "senior_loss": 2,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 45,
+    "senior_loss": 2,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 2,
+    "damage": 45,
+    "senior_loss": 1,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 2,
+    "damage": 40,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 882
+ },
+ {
+  "id": "expert-008",
+  "seed": 8,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 105,
+  "overhead": 20,
+  "senior_cap": 5,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 6,
+    "revenue": 155,
+    "deadline": 2,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 12,
+    "revenue": 275,
+    "deadline": 4,
+    "late_penalty": 70,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 6,
+    "revenue": 170,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 7,
+    "revenue": 270,
+    "deadline": 4,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 4,
+    "revenue": 150,
+    "deadline": 1,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 4,
+    "revenue": 95,
+    "deadline": 5,
+    "late_penalty": 20,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 10,
+    "revenue": 255,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 4,
+    "revenue": 90,
+    "deadline": 2,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 9,
+    "revenue": 310,
+    "deadline": 5,
+    "late_penalty": 65,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P10",
+    "work": 4,
+    "revenue": 145,
+    "deadline": 1,
+    "late_penalty": 30,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 45,
+    "senior_loss": 0,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 2,
+    "damage": 75,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 55,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 3,
+    "damage": 45,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 580
+ },
+ {
+  "id": "expert-009",
+  "seed": 9,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 80,
+  "overhead": 20,
+  "senior_cap": 4,
+  "junior_cap": 3,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 9,
+    "revenue": 310,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 6,
+    "revenue": 250,
+    "deadline": 3,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 6,
+    "revenue": 235,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 11,
+    "revenue": 285,
+    "deadline": 5,
+    "late_penalty": 80,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 11,
+    "revenue": 305,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 7,
+    "revenue": 180,
+    "deadline": 5,
+    "late_penalty": 35,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 11,
+    "revenue": 245,
+    "deadline": 5,
+    "late_penalty": 60,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 4,
+    "revenue": 130,
+    "deadline": 3,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 4,
+    "revenue": 135,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": [
+     "P8"
+    ]
+   },
+   {
+    "id": "P10",
+    "work": 8,
+    "revenue": 195,
+    "deadline": 3,
+    "late_penalty": 45,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 4,
+    "damage": 70,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 5,
+    "damage": 75,
+    "senior_loss": 1,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 3,
+    "damage": 40,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 75,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 601
+ },
+ {
+  "id": "expert-010",
+  "seed": 10,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 100,
+  "overhead": 25,
+  "senior_cap": 5,
+  "junior_cap": 4,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 10,
+    "revenue": 370,
+    "deadline": 5,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 8,
+    "revenue": 195,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 10,
+    "revenue": 290,
+    "deadline": 3,
+    "late_penalty": 75,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 12,
+    "revenue": 500,
+    "deadline": 3,
+    "late_penalty": 140,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 9,
+    "revenue": 340,
+    "deadline": 3,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 6,
+    "revenue": 205,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 7,
+    "revenue": 290,
+    "deadline": 2,
+    "late_penalty": 50,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 4,
+    "revenue": 145,
+    "deadline": 3,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 9,
+    "revenue": 250,
+    "deadline": 2,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 11,
+    "revenue": 330,
+    "deadline": 5,
+    "late_penalty": 80,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 50,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 2,
+    "damage": 45,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 50,
+    "senior_loss": 0,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 5,
+    "damage": 75,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 688
+ },
+ {
+  "id": "expert-011",
+  "seed": 11,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 110,
+  "overhead": 20,
+  "senior_cap": 5,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 9,
+    "revenue": 370,
+    "deadline": 4,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 11,
+    "revenue": 245,
+    "deadline": 1,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 5,
+    "revenue": 120,
+    "deadline": 2,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 10,
+    "revenue": 300,
+    "deadline": 3,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 7,
+    "revenue": 235,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 7,
+    "revenue": 175,
+    "deadline": 5,
+    "late_penalty": 35,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 7,
+    "revenue": 200,
+    "deadline": 5,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 6,
+    "revenue": 240,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 5,
+    "revenue": 165,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P8"
+    ]
+   },
+   {
+    "id": "P10",
+    "work": 12,
+    "revenue": 410,
+    "deadline": 2,
+    "late_penalty": 50,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 4,
+    "damage": 40,
+    "senior_loss": 0,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 5,
+    "damage": 65,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 90,
+    "senior_loss": 2,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 3,
+    "damage": 75,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 875
+ },
+ {
+  "id": "expert-012",
+  "seed": 12,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 95,
+  "overhead": 20,
+  "senior_cap": 5,
+  "junior_cap": 3,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 10,
+    "revenue": 265,
+    "deadline": 2,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 7,
+    "revenue": 200,
+    "deadline": 4,
+    "late_penalty": 55,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 11,
+    "revenue": 385,
+    "deadline": 4,
+    "late_penalty": 55,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 10,
+    "revenue": 260,
+    "deadline": 2,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 6,
+    "revenue": 230,
+    "deadline": 3,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 10,
+    "revenue": 375,
+    "deadline": 4,
+    "late_penalty": 75,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 11,
+    "revenue": 245,
+    "deadline": 3,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 10,
+    "revenue": 310,
+    "deadline": 5,
+    "late_penalty": 55,
+    "deps": [
+     "P7"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 5,
+    "revenue": 165,
+    "deadline": 3,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 10,
+    "revenue": 410,
+    "deadline": 3,
+    "late_penalty": 120,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 4,
+    "damage": 50,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 4,
+    "damage": 60,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 50,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 5,
+    "damage": 50,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 681
+ },
+ {
+  "id": "expert-013",
+  "seed": 13,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 95,
+  "overhead": 20,
+  "senior_cap": 4,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 5,
+    "revenue": 115,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 5,
+    "revenue": 180,
+    "deadline": 2,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 12,
+    "revenue": 285,
+    "deadline": 1,
+    "late_penalty": 80,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 4,
+    "revenue": 90,
+    "deadline": 2,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 6,
+    "revenue": 155,
+    "deadline": 2,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 6,
+    "revenue": 240,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 7,
+    "revenue": 265,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 9,
+    "revenue": 225,
+    "deadline": 1,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 4,
+    "revenue": 95,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 11,
+    "revenue": 420,
+    "deadline": 5,
+    "late_penalty": 80,
+    "deps": [
+     "P1"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 40,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 4,
+    "damage": 55,
+    "senior_loss": 0,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 2,
+    "damage": 70,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 3,
+    "damage": 50,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 172
+ },
+ {
+  "id": "expert-014",
+  "seed": 14,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 105,
+  "overhead": 15,
+  "senior_cap": 5,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 7,
+    "revenue": 180,
+    "deadline": 5,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 10,
+    "revenue": 410,
+    "deadline": 2,
+    "late_penalty": 55,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 7,
+    "revenue": 225,
+    "deadline": 3,
+    "late_penalty": 25,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 4,
+    "revenue": 115,
+    "deadline": 3,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 7,
+    "revenue": 205,
+    "deadline": 4,
+    "late_penalty": 25,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 7,
+    "revenue": 270,
+    "deadline": 4,
+    "late_penalty": 75,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 6,
+    "revenue": 205,
+    "deadline": 4,
+    "late_penalty": 50,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 9,
+    "revenue": 230,
+    "deadline": 4,
+    "late_penalty": 70,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 5,
+    "revenue": 210,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 8,
+    "revenue": 185,
+    "deadline": 1,
+    "late_penalty": 50,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 2,
+    "damage": 50,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 45,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 2,
+    "damage": 75,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 3,
+    "damage": 60,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 901
+ },
+ {
+  "id": "expert-015",
+  "seed": 15,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 100,
+  "overhead": 15,
+  "senior_cap": 5,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 7,
+    "revenue": 165,
+    "deadline": 2,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 11,
+    "revenue": 315,
+    "deadline": 1,
+    "late_penalty": 60,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 5,
+    "revenue": 210,
+    "deadline": 4,
+    "late_penalty": 50,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 5,
+    "revenue": 150,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 6,
+    "revenue": 160,
+    "deadline": 3,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 6,
+    "revenue": 175,
+    "deadline": 3,
+    "late_penalty": 45,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 5,
+    "revenue": 115,
+    "deadline": 4,
+    "late_penalty": 30,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 8,
+    "revenue": 275,
+    "deadline": 4,
+    "late_penalty": 75,
+    "deps": [
+     "P6"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 10,
+    "revenue": 375,
+    "deadline": 2,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 7,
+    "revenue": 190,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 5,
+    "damage": 80,
+    "senior_loss": 1,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 4,
+    "damage": 85,
+    "senior_loss": 0,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 2,
+    "damage": 70,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 85,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 703
+ },
+ {
+  "id": "expert-016",
+  "seed": 16,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 110,
+  "overhead": 25,
+  "senior_cap": 5,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 11,
+    "revenue": 445,
+    "deadline": 1,
+    "late_penalty": 120,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 12,
+    "revenue": 345,
+    "deadline": 4,
+    "late_penalty": 75,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 5,
+    "revenue": 140,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 12,
+    "revenue": 285,
+    "deadline": 3,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 4,
+    "revenue": 120,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 7,
+    "revenue": 255,
+    "deadline": 2,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 8,
+    "revenue": 260,
+    "deadline": 1,
+    "late_penalty": 75,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 4,
+    "revenue": 95,
+    "deadline": 3,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 8,
+    "revenue": 280,
+    "deadline": 1,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 11,
+    "revenue": 455,
+    "deadline": 2,
+    "late_penalty": 120,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 2,
+    "damage": 90,
+    "senior_loss": 0,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 55,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 3,
+    "damage": 60,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 5,
+    "damage": 85,
+    "senior_loss": 0,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 294
+ },
+ {
+  "id": "expert-017",
+  "seed": 17,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 95,
+  "overhead": 15,
+  "senior_cap": 4,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 9,
+    "revenue": 370,
+    "deadline": 5,
+    "late_penalty": 75,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 8,
+    "revenue": 310,
+    "deadline": 5,
+    "late_penalty": 90,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 5,
+    "revenue": 120,
+    "deadline": 2,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 6,
+    "revenue": 160,
+    "deadline": 1,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 4,
+    "revenue": 115,
+    "deadline": 1,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 7,
+    "revenue": 225,
+    "deadline": 2,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 9,
+    "revenue": 255,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 8,
+    "revenue": 315,
+    "deadline": 1,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 7,
+    "revenue": 185,
+    "deadline": 1,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 11,
+    "revenue": 345,
+    "deadline": 3,
+    "late_penalty": 70,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 2,
+    "damage": 85,
+    "senior_loss": 0,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 55,
+    "senior_loss": 0,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 4,
+    "damage": 55,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 65,
+    "senior_loss": 2,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 768
+ },
+ {
+  "id": "expert-018",
+  "seed": 18,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 75,
+  "overhead": 15,
+  "senior_cap": 4,
+  "junior_cap": 3,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 6,
+    "revenue": 230,
+    "deadline": 1,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 6,
+    "revenue": 240,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 9,
+    "revenue": 290,
+    "deadline": 2,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 4,
+    "revenue": 160,
+    "deadline": 1,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 5,
+    "revenue": 180,
+    "deadline": 2,
+    "late_penalty": 30,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 4,
+    "revenue": 110,
+    "deadline": 1,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 4,
+    "revenue": 125,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 9,
+    "revenue": 330,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 8,
+    "revenue": 225,
+    "deadline": 2,
+    "late_penalty": 55,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 8,
+    "revenue": 265,
+    "deadline": 5,
+    "late_penalty": 70,
+    "deps": [
+     "P8"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 55,
+    "senior_loss": 0,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 2,
+    "damage": 45,
+    "senior_loss": 0,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 3,
+    "damage": 65,
+    "senior_loss": 0,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 3,
+    "damage": 45,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 475
+ },
+ {
+  "id": "expert-019",
+  "seed": 19,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 110,
+  "overhead": 20,
+  "senior_cap": 5,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 12,
+    "revenue": 435,
+    "deadline": 3,
+    "late_penalty": 85,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 9,
+    "revenue": 260,
+    "deadline": 2,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 12,
+    "revenue": 315,
+    "deadline": 5,
+    "late_penalty": 85,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 12,
+    "revenue": 370,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 8,
+    "revenue": 235,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 8,
+    "revenue": 250,
+    "deadline": 2,
+    "late_penalty": 60,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 9,
+    "revenue": 260,
+    "deadline": 2,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 7,
+    "revenue": 270,
+    "deadline": 5,
+    "late_penalty": 65,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 4,
+    "revenue": 120,
+    "deadline": 2,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 8,
+    "revenue": 205,
+    "deadline": 3,
+    "late_penalty": 35,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 75,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 65,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 70,
+    "senior_loss": 0,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 5,
+    "damage": 75,
+    "senior_loss": 2,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 682
+ },
+ {
+  "id": "expert-020",
+  "seed": 20,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 95,
+  "overhead": 15,
+  "senior_cap": 4,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 8,
+    "revenue": 240,
+    "deadline": 1,
+    "late_penalty": 50,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 5,
+    "revenue": 205,
+    "deadline": 2,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 12,
+    "revenue": 460,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 6,
+    "revenue": 190,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 4,
+    "revenue": 135,
+    "deadline": 3,
+    "late_penalty": 35,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 11,
+    "revenue": 395,
+    "deadline": 3,
+    "late_penalty": 90,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 10,
+    "revenue": 245,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 7,
+    "revenue": 210,
+    "deadline": 4,
+    "late_penalty": 60,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 6,
+    "revenue": 190,
+    "deadline": 1,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 5,
+    "revenue": 130,
+    "deadline": 5,
+    "late_penalty": 35,
+    "deps": [
+     "P7"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 70,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 2,
+    "damage": 90,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 80,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 40,
+    "senior_loss": 0,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 615
+ },
+ {
+  "id": "expert-021",
+  "seed": 21,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 100,
+  "overhead": 15,
+  "senior_cap": 5,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 12,
+    "revenue": 395,
+    "deadline": 4,
+    "late_penalty": 100,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 4,
+    "revenue": 105,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 8,
+    "revenue": 185,
+    "deadline": 1,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 8,
+    "revenue": 235,
+    "deadline": 5,
+    "late_penalty": 25,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 11,
+    "revenue": 320,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 10,
+    "revenue": 280,
+    "deadline": 2,
+    "late_penalty": 80,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 7,
+    "revenue": 290,
+    "deadline": 3,
+    "late_penalty": 45,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 10,
+    "revenue": 385,
+    "deadline": 4,
+    "late_penalty": 85,
+    "deps": [
+     "P6"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 4,
+    "revenue": 130,
+    "deadline": 5,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 7,
+    "revenue": 185,
+    "deadline": 1,
+    "late_penalty": 40,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 4,
+    "damage": 75,
+    "senior_loss": 2,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 65,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 50,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 2,
+    "damage": 40,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 440
+ },
+ {
+  "id": "expert-022",
+  "seed": 22,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 105,
+  "overhead": 20,
+  "senior_cap": 5,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 10,
+    "revenue": 375,
+    "deadline": 2,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 4,
+    "revenue": 130,
+    "deadline": 3,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 8,
+    "revenue": 200,
+    "deadline": 4,
+    "late_penalty": 50,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 4,
+    "revenue": 125,
+    "deadline": 5,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 6,
+    "revenue": 225,
+    "deadline": 4,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 7,
+    "revenue": 170,
+    "deadline": 4,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 8,
+    "revenue": 255,
+    "deadline": 5,
+    "late_penalty": 55,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 7,
+    "revenue": 235,
+    "deadline": 4,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 12,
+    "revenue": 460,
+    "deadline": 1,
+    "late_penalty": 130,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 11,
+    "revenue": 360,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P5"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 5,
+    "damage": 90,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 4,
+    "damage": 90,
+    "senior_loss": 0,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 4,
+    "damage": 55,
+    "senior_loss": 1,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 60,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 911
+ },
+ {
+  "id": "expert-023",
+  "seed": 23,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 105,
+  "overhead": 15,
+  "senior_cap": 5,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 9,
+    "revenue": 240,
+    "deadline": 3,
+    "late_penalty": 35,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 12,
+    "revenue": 355,
+    "deadline": 3,
+    "late_penalty": 90,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 9,
+    "revenue": 230,
+    "deadline": 3,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 7,
+    "revenue": 165,
+    "deadline": 4,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 12,
+    "revenue": 490,
+    "deadline": 4,
+    "late_penalty": 90,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 5,
+    "revenue": 125,
+    "deadline": 5,
+    "late_penalty": 20,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 6,
+    "revenue": 190,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 11,
+    "revenue": 375,
+    "deadline": 2,
+    "late_penalty": 100,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 6,
+    "revenue": 135,
+    "deadline": 2,
+    "late_penalty": 15,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 6,
+    "revenue": 205,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": [
+     "P3"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 50,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 4,
+    "damage": 55,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 45,
+    "senior_loss": 0,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 3,
+    "damage": 60,
+    "senior_loss": 2,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 662
+ },
+ {
+  "id": "expert-024",
+  "seed": 24,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 75,
+  "overhead": 15,
+  "senior_cap": 3,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 10,
+    "revenue": 335,
+    "deadline": 2,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 9,
+    "revenue": 250,
+    "deadline": 4,
+    "late_penalty": 65,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 8,
+    "revenue": 215,
+    "deadline": 5,
+    "late_penalty": 35,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 7,
+    "revenue": 165,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 8,
+    "revenue": 280,
+    "deadline": 5,
+    "late_penalty": 75,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 5,
+    "revenue": 200,
+    "deadline": 4,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 12,
+    "revenue": 395,
+    "deadline": 2,
+    "late_penalty": 90,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 12,
+    "revenue": 405,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 4,
+    "revenue": 165,
+    "deadline": 1,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 12,
+    "revenue": 305,
+    "deadline": 2,
+    "late_penalty": 75,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 80,
+    "senior_loss": 0,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 4,
+    "damage": 70,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 5,
+    "damage": 60,
+    "senior_loss": 1,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 55,
+    "senior_loss": 1,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 631
+ },
+ {
+  "id": "expert-025",
+  "seed": 25,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 80,
+  "overhead": 25,
+  "senior_cap": 3,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 5,
+    "revenue": 135,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 9,
+    "revenue": 240,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 5,
+    "revenue": 150,
+    "deadline": 2,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 9,
+    "revenue": 340,
+    "deadline": 1,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 9,
+    "revenue": 245,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 8,
+    "revenue": 310,
+    "deadline": 3,
+    "late_penalty": 70,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 8,
+    "revenue": 275,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 9,
+    "revenue": 345,
+    "deadline": 4,
+    "late_penalty": 55,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 4,
+    "revenue": 105,
+    "deadline": 2,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 12,
+    "revenue": 280,
+    "deadline": 4,
+    "late_penalty": 30,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 5,
+    "damage": 75,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C2",
+    "quarter": 5,
+    "damage": 75,
+    "senior_loss": 1,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 4,
+    "damage": 90,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 75,
+    "senior_loss": 0,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 394
+ },
+ {
+  "id": "expert-026",
+  "seed": 26,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 110,
+  "overhead": 20,
+  "senior_cap": 5,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 11,
+    "revenue": 375,
+    "deadline": 5,
+    "late_penalty": 70,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 7,
+    "revenue": 165,
+    "deadline": 5,
+    "late_penalty": 45,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 10,
+    "revenue": 340,
+    "deadline": 5,
+    "late_penalty": 90,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 12,
+    "revenue": 365,
+    "deadline": 1,
+    "late_penalty": 70,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 4,
+    "revenue": 120,
+    "deadline": 2,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 12,
+    "revenue": 335,
+    "deadline": 2,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 6,
+    "revenue": 155,
+    "deadline": 3,
+    "late_penalty": 35,
+    "deps": [
+     "P6"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 5,
+    "revenue": 180,
+    "deadline": 1,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 8,
+    "revenue": 255,
+    "deadline": 5,
+    "late_penalty": 60,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 10,
+    "revenue": 230,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": [
+     "P4"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 5,
+    "damage": 80,
+    "senior_loss": 0,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 2,
+    "damage": 40,
+    "senior_loss": 0,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 4,
+    "damage": 70,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 60,
+    "senior_loss": 1,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 654
+ },
+ {
+  "id": "expert-027",
+  "seed": 27,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 110,
+  "overhead": 25,
+  "senior_cap": 5,
+  "junior_cap": 6,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 5,
+    "revenue": 190,
+    "deadline": 2,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 10,
+    "revenue": 280,
+    "deadline": 5,
+    "late_penalty": 75,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 11,
+    "revenue": 320,
+    "deadline": 1,
+    "late_penalty": 95,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 5,
+    "revenue": 115,
+    "deadline": 2,
+    "late_penalty": 35,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P5",
+    "work": 8,
+    "revenue": 325,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 5,
+    "revenue": 205,
+    "deadline": 2,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P7",
+    "work": 6,
+    "revenue": 155,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": [
+     "P6"
+    ]
+   },
+   {
+    "id": "P8",
+    "work": 7,
+    "revenue": 290,
+    "deadline": 3,
+    "late_penalty": 75,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 7,
+    "revenue": 180,
+    "deadline": 1,
+    "late_penalty": 20,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 4,
+    "revenue": 140,
+    "deadline": 3,
+    "late_penalty": 35,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 5,
+    "damage": 80,
+    "senior_loss": 2,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 2,
+    "damage": 60,
+    "senior_loss": 2,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 2,
+    "damage": 60,
+    "senior_loss": 0,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C4",
+    "quarter": 3,
+    "damage": 70,
+    "senior_loss": 2,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   }
+  ],
+  "ref_profit": 765
+ },
+ {
+  "id": "expert-028",
+  "seed": 28,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 90,
+  "overhead": 25,
+  "senior_cap": 4,
+  "junior_cap": 5,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 8,
+    "revenue": 180,
+    "deadline": 1,
+    "late_penalty": 25,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 10,
+    "revenue": 345,
+    "deadline": 5,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P3",
+    "work": 5,
+    "revenue": 160,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P4",
+    "work": 7,
+    "revenue": 275,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 12,
+    "revenue": 365,
+    "deadline": 3,
+    "late_penalty": 80,
+    "deps": []
+   },
+   {
+    "id": "P6",
+    "work": 5,
+    "revenue": 195,
+    "deadline": 5,
+    "late_penalty": 40,
+    "deps": [
+     "P4"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 8,
+    "revenue": 200,
+    "deadline": 4,
+    "late_penalty": 40,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 10,
+    "revenue": 415,
+    "deadline": 5,
+    "late_penalty": 55,
+    "deps": [
+     "P3"
+    ]
+   },
+   {
+    "id": "P9",
+    "work": 7,
+    "revenue": 185,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": []
+   },
+   {
+    "id": "P10",
+    "work": 4,
+    "revenue": 145,
+    "deadline": 1,
+    "late_penalty": 20,
+    "deps": []
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 75,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 3,
+    "damage": 45,
+    "senior_loss": 1,
+    "mitigation_cost": 15,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C3",
+    "quarter": 2,
+    "damage": 50,
+    "senior_loss": 0,
+    "mitigation_cost": 10,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 55,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 577
+ },
+ {
+  "id": "expert-029",
+  "seed": 29,
+  "difficulty": "expert",
+  "n_quarters": 5,
+  "initial_cash": 90,
+  "overhead": 15,
+  "senior_cap": 5,
+  "junior_cap": 3,
+  "senior_cost": 30,
+  "junior_cost": 12,
+  "senior_output": 2,
+  "junior_output": 1,
+  "supervision_ratio": 2,
+  "projects": [
+   {
+    "id": "P1",
+    "work": 8,
+    "revenue": 310,
+    "deadline": 1,
+    "late_penalty": 65,
+    "deps": []
+   },
+   {
+    "id": "P2",
+    "work": 7,
+    "revenue": 225,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": [
+     "P1"
+    ]
+   },
+   {
+    "id": "P3",
+    "work": 10,
+    "revenue": 250,
+    "deadline": 4,
+    "late_penalty": 30,
+    "deps": []
+   },
+   {
+    "id": "P4",
+    "work": 10,
+    "revenue": 260,
+    "deadline": 1,
+    "late_penalty": 45,
+    "deps": []
+   },
+   {
+    "id": "P5",
+    "work": 12,
+    "revenue": 315,
+    "deadline": 5,
+    "late_penalty": 50,
+    "deps": [
+     "P2"
+    ]
+   },
+   {
+    "id": "P6",
+    "work": 5,
+    "revenue": 150,
+    "deadline": 5,
+    "late_penalty": 20,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P7",
+    "work": 5,
+    "revenue": 200,
+    "deadline": 4,
+    "late_penalty": 50,
+    "deps": []
+   },
+   {
+    "id": "P8",
+    "work": 6,
+    "revenue": 210,
+    "deadline": 1,
+    "late_penalty": 60,
+    "deps": []
+   },
+   {
+    "id": "P9",
+    "work": 6,
+    "revenue": 250,
+    "deadline": 5,
+    "late_penalty": 30,
+    "deps": [
+     "P5"
+    ]
+   },
+   {
+    "id": "P10",
+    "work": 7,
+    "revenue": 185,
+    "deadline": 3,
+    "late_penalty": 40,
+    "deps": [
+     "P4"
+    ]
+   }
+  ],
+  "crises": [
+   {
+    "id": "C1",
+    "quarter": 3,
+    "damage": 45,
+    "senior_loss": 2,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 1
+   },
+   {
+    "id": "C2",
+    "quarter": 4,
+    "damage": 75,
+    "senior_loss": 2,
+    "mitigation_cost": 20,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C3",
+    "quarter": 2,
+    "damage": 55,
+    "senior_loss": 1,
+    "mitigation_cost": 25,
+    "mitigation_seniors": 0
+   },
+   {
+    "id": "C4",
+    "quarter": 4,
+    "damage": 45,
+    "senior_loss": 0,
+    "mitigation_cost": 30,
+    "mitigation_seniors": 0
+   }
+  ],
+  "ref_profit": 548
+ }
+]
