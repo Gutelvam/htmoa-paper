@@ -161,6 +161,10 @@ Each results directory holds `instances.json` (the instances with their optimal 
   validity and regret are also reported, by fan-in and by tree level.
 - **Cost**: calls, input and output tokens, estimated USD, largest aggregator prompt.
 
+## License
+
+Code and saved results are released under the MIT License (see `LICENSE`).
+
 ## Citation
 
 ```
