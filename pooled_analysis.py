@@ -158,6 +158,118 @@ def copy_steps(dirs: list[Path]) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+GEN = dict(fc="#cde2fb", ec="#2a78d6")    # a generation call
+AGG = dict(fc="#fbd9cc", ec="#eb6834")    # an aggregation call
+
+
+def _canvas(ax, title: str, xlim: float, ylim: float) -> None:
+    ax.set_xlim(0, xlim)
+    ax.set_ylim(0.45, ylim)
+    ax.set_aspect("equal")
+    ax.axis("off")
+    ax.set_title(title, fontsize=9.5, color=A.INK, loc="center", pad=4, linespacing=1.4)
+
+
+def _arrow(ax, a, b, shrink=0.36) -> None:
+    ax.annotate("", xy=b, xytext=a, arrowprops=dict(
+        arrowstyle="-|>", color=A.INK2, lw=1.1, shrinkA=shrink * 72 / 2.6, shrinkB=shrink * 72 / 2.6,
+        mutation_scale=9))
+
+
+def _call(ax, xy, kind: str, label: str = "") -> None:
+    from matplotlib.patches import Circle, FancyBboxPatch
+    x, y = xy
+    if kind == "gen":
+        ax.add_patch(Circle(xy, 0.34, lw=1.4, zorder=3, **GEN))
+    elif kind == "agg":
+        ax.add_patch(FancyBboxPatch((x - 0.31, y - 0.31), 0.62, 0.62, zorder=3, lw=1.4,
+                                    boxstyle="round,pad=0.02,rounding_size=0.08", **AGG))
+    else:   # the empty root state
+        ax.add_patch(Circle(xy, 0.34, lw=1.2, zorder=3, fc=A.SURFACE, ec=A.MUTED, ls=(0, (3, 2))))
+    ax.text(x, y, label, ha="center", va="center", fontsize=8, color=A.INK, zorder=4)
+
+
+def fig_architecture(path: Path) -> None:
+    """Flat-MoA and HT-MoA at the same number of calls (9): the schematic of Section 3."""
+    from matplotlib.lines import Line2D
+    fig, axes = plt.subplots(1, 3, figsize=(12, 3.5), facecolor=A.SURFACE,
+                             gridspec_kw={"wspace": 0.12})
+    ax = axes[0]
+    _canvas(ax, "Flat-MoA\n8 generations, then 1 aggregation of fan-in 8", 8.4, 4.75)
+    workers = [(0.6 + i * 1.03, 1.0) for i in range(8)]
+    for i, w in enumerate(workers):
+        _call(ax, w, "gen", f"$s_{{{i + 1}}}$")
+        _arrow(ax, w, (4.2, 3.9))
+    _call(ax, (4.2, 3.9), "agg", "$y$")
+
+    levels = {1: [(2.2, 2.6), (6.2, 2.6)], 2: [(1.2, 1.0), (3.2, 1.0), (5.2, 1.0), (7.2, 1.0)]}
+    ax = axes[1]
+    _canvas(ax, "HT-MoA, step 1: top-down expansion\n6 generations, each refines its parent's draft",
+            8.4, 4.75)
+    root = (4.2, 4.2)
+    _call(ax, root, "root", r"$\emptyset$")
+    for j, p in enumerate(levels[1]):
+        _arrow(ax, root, p)
+        _call(ax, p, "gen", f"$s_{{1,{j + 1}}}$")
+        for c in range(2):
+            leaf = levels[2][2 * j + c]
+            _arrow(ax, p, leaf)
+            _call(ax, leaf, "gen", f"$s_{{2,{2 * j + c + 1}}}$")
+
+    ax = axes[2]
+    _canvas(ax, "HT-MoA, step 2: bottom-up aggregation\n3 aggregations of fan-in 2", 8.4, 4.75)
+    for j, p in enumerate(levels[1]):
+        for c in range(2):
+            leaf = levels[2][2 * j + c]
+            _call(ax, leaf, "gen", f"$s_{{2,{2 * j + c + 1}}}$")
+            _arrow(ax, leaf, p)
+        _call(ax, p, "agg", rf"$\hat{{s}}_{{1,{j + 1}}}$")
+        _arrow(ax, p, root)
+    _call(ax, root, "agg", "$y$")
+
+    handles = [Line2D([], [], marker="o", ls="", ms=11, mfc=GEN["fc"], mec=GEN["ec"], mew=1.4),
+               Line2D([], [], marker="s", ls="", ms=10, mfc=AGG["fc"], mec=AGG["ec"], mew=1.4)]
+    leg = fig.legend(handles, ["generation call", "aggregation call"], loc="lower center", ncol=2,
+                     frameon=False, fontsize=9, bbox_to_anchor=(0.5, -0.01))
+    for t in leg.get_texts():
+        t.set_color(A.INK2)
+    fig.savefig(path, dpi=220, bbox_inches="tight", facecolor=A.SURFACE)
+    plt.close(fig)
+
+
+def fig_study_flow(path: Path, stages: list[tuple[str, str, str]]) -> None:
+    """Flow of the study with the number of units at each stage. `stages` holds
+    (stage name, main text, side note or '')."""
+    from matplotlib.patches import FancyBboxPatch
+    h, gap, w, side_w = 1.25, 0.55, 6.6, 4.6
+    total = len(stages) * h + (len(stages) - 1) * gap
+    fig, ax = plt.subplots(figsize=(9.4, 0.62 * total + 0.3), facecolor=A.SURFACE)
+    ax.set_xlim(0, w + side_w + 1.0)
+    ax.set_ylim(-0.08, total + 0.08)
+    ax.axis("off")
+    for i, (name, text, note) in enumerate(stages):
+        y = total - (i + 1) * h - i * gap
+        ax.add_patch(FancyBboxPatch((0.05, y), w, h, boxstyle="round,pad=0.02,rounding_size=0.12",
+                                    lw=1.3, fc="#eaf2fd", ec="#2a78d6"))
+        ax.text(0.05 + w / 2, y + h - 0.30, name, ha="center", va="center", fontsize=9.5,
+                color=A.INK, fontweight="bold")
+        ax.text(0.05 + w / 2, y + h / 2 - 0.20, text, ha="center", va="center", fontsize=8.6,
+                color=A.INK, linespacing=1.35)
+        if i < len(stages) - 1:
+            ax.annotate("", xy=(0.05 + w / 2, y - gap + 0.04), xytext=(0.05 + w / 2, y - 0.04),
+                        arrowprops=dict(arrowstyle="-|>", color=A.INK2, lw=1.2, mutation_scale=11))
+        if note:
+            ax.add_patch(FancyBboxPatch((w + 0.9, y + 0.14), side_w, h - 0.28, lw=1.0,
+                                        boxstyle="round,pad=0.02,rounding_size=0.10",
+                                        fc=A.SURFACE, ec=A.MUTED))
+            ax.text(w + 0.9 + side_w / 2, y + h / 2, note, ha="center", va="center", fontsize=8.2,
+                    color=A.INK2, linespacing=1.35)
+            ax.annotate("", xy=(w + 0.88, y + h / 2), xytext=(w + 0.07, y + h / 2),
+                        arrowprops=dict(arrowstyle="-|>", color=A.MUTED, lw=1.0, mutation_scale=9))
+    fig.savefig(path, dpi=220, bbox_inches="tight", facecolor=A.SURFACE)
+    plt.close(fig)
+
+
 def tex_table(path: Path, header: list[str], rows: list[list[str]], align: str) -> None:
     lines = [f"\\begin{{tabular}}{{{align}}}", "\\toprule", " & ".join(header) + " \\\\", "\\midrule"]
     for r in rows:
@@ -397,6 +509,48 @@ def main() -> None:
                      f"{per_inst.loc[t, 'single'].mean():.2f}"])
     section("Difficulty tiers (means over the 30 instances of each tier; money in $k)", header,
             rows, "tab_tiers", "lcccccccc")
+
+    # ---- schematic of the architectures and flow of the study --------------------
+    from htmoa.env import generate
+    from htmoa.solver import MIN_OPTIMUM
+    fig_architecture(args.out / "fig_architecture.png")
+    rejected = 0   # generator draws discarded before each accepted instance
+    for t in tiers:
+        for i in insts[t]:
+            attempt = 0
+            while solve_reference(generate(i.seed, t, attempt))[1] < MIN_OPTIMUM:
+                attempt += 1
+            rejected += attempt
+    n_inst, n_methods = len(piv), df["method"].nunique()
+    kinds = df.drop_duplicates("method")
+    n_abl = int(kinds["method"].map(lambda m: base_spec(m) is not None).sum())
+    n_flat = int((kinds["kind"] == "flat").sum())
+    n_tree = int((kinds["kind"] == "htmoa").sum()) - n_abl
+    n_calls_total, n_agg = int(df["calls"].sum()), len(steps)
+    ended = int((nodes["stop_reason"] == "end_turn").sum())
+    fig_study_flow(args.out / "fig_study_flow.png", [
+        ("Benchmark instances",
+         f"{len(tiers)} difficulty tiers x {n_inst // len(tiers)} seeds\n"
+         f"instances used: n = {n_inst}, each solved to optimality",
+         f"generator draws rejected: n = {rejected}\n(optimal profit below {MIN_OPTIMUM}, or infeasible)"),
+        ("Methods",
+         f"{n_methods} methods: 1 single agent, {n_flat} Flat-MoA,\n"
+         f"{n_tree} HT-MoA, {n_abl} HT-MoA ablations", ""),
+        ("Runs",
+         f"{n_inst} instances x {n_methods} methods = {len(df):,} runs\n"
+         f"completed: n = {len(df):,}", f"missing runs: n = {n_inst * n_methods - len(df)}"),
+        ("Model calls",
+         f"{n_calls_total:,} calls: {n_calls_total - n_agg:,} generations,\n{n_agg:,} aggregations",
+         f"calls not ended normally: n = {n_calls_total - ended}\n"
+         f"final plans not parseable: n = {int((~df['parsed']).sum())}"),
+        ("Scoring",
+         f"every state scored by the exact verifier:\nn = {len(nodes):,} plans, against the optimum", ""),
+        ("Analyses",
+         f"RQ1: {len(MATCHED)} matched comparisons   RQ2: {n_agg:,} aggregations\n"
+         f"RQ3: state quality by tree level   RQ4: {n_abl} ablations", ""),
+    ])
+    md.append(f"\nStudy flow: {rejected} generator draws rejected; {n_calls_total - n_agg} generation "
+              f"calls and {n_agg} aggregation calls; {len(nodes)} scored states.")
 
     ex = insts[tiers[0]][0]
     plan, profit = solve_reference(ex)
