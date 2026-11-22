@@ -555,7 +555,7 @@ def main() -> None:
     ex = insts[tiers[0]][0]
     plan, profit = solve_reference(ex)
     ev = verify(ex, plan)
-    def wrap(text: str, width: int = 92) -> str:
+    def wrap(text: str, width: int = 86) -> str:   # fits a 6.5in text block in 10pt typewriter
         import textwrap
         return "\n".join(textwrap.fill(line, width, subsequent_indent="  ") if line else ""
                          for line in text.splitlines())
