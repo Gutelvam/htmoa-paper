@@ -169,7 +169,7 @@ Code and saved results are released under the MIT License (see `LICENSE`).
 
 ```bibtex
 @misc{fernandes2026htmoa,
-  author       = {Fernandes, Gutelvam Rodrigues and Ferreira, Lu{'i}s Gonzaga Martins},
+  author       = {Fernandes, Gutelvam Rodrigues and Ferreira, Lu{\'i}s Gonzaga Martins},
   title        = {{Selection, Not Synthesis: Why Hierarchical Aggregation Keeps Scaling
                   Mixture-of-Agents Where Flat Aggregation Saturates}},
   year         = {2026},
